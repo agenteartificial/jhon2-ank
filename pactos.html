@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Pactos de Magia - Riqueza, Fama y Éxito Absoluto</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" as="script">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" as="script">
+    <link rel="preload" as="video"
+        href="https://vz-5b6e8b37-e60.b-cdn.net/58022790-4ddd-4c4c-8738-b68bc7305072/play_480p.mp4">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5RTMP5N');</script>
+    <!-- End Google Tag Manager -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Pactos de Riqueza y Poder",
+      "image": "https://chamanes-espirituales.online/recursos/pactos/pactos1.webp",
+      "telephone": "+19123037943",
+      "url": "https://chamanes-espirituales.online/pactos.html",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      },
+      "priceRange": "$$$"
+    }
+    </script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d41132",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#0a0506",
+                        "gold": "#D4AF37",
+                        "gold-light": "#F9E4B7",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1a0b0d;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #482329;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d41132;
+        }
+
+        .glass-panel {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .glass-card {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -10px rgba(212, 17, 50, 0.2);
+        }
+
+        .text-gradient-gold {
+            background: linear-gradient(to right, #D4AF37, #F9E4B7, #D4AF37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: shine 5s linear infinite;
+        }
+
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% {
+                transform: translate(0, 0px);
+            }
+
+            50% {
+                transform: translate(0, 15px);
+            }
+
+            100% {
+                transform: translate(0, -0px);
+            }
+        }
+
+        .wa-conversion-btn {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wa-conversion-btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+        }
+
+        .wa-conversion-btn:hover::after {
+            left: 100%;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display overflow-x-hidden antialiased">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5RTMP5N" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <video autoplay loop muted playsinline class="object-cover w-full h-full fixed inset-0 z-[-2]"
+        src="https://vz-5b6e8b37-e60.b-cdn.net/58022790-4ddd-4c4c-8738-b68bc7305072/play_480p.mp4"></video>
+    <div class="fixed inset-0 bg-black/60 z-[-1]"></div>
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex items-center justify-center pb-12 px-6 overflow-hidden pt-12">
+        <div
+            class="absolute top-1/4 right-0 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] -z-10 animate-pulse">
+        </div>
+        <div class="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div class="flex flex-col gap-6 z-10 hero-text opacity-0 translate-y-10">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-gold/30 bg-gold/5 w-fit">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                    <span class="text-xs uppercase tracking-widest text-gold font-bold">Guía Espiritual
+                        Garantizada</span>
+                </div>
+                <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-medium leading-[1.1] text-white">
+                    Alcanza la <br />
+                    <span class="text-gradient-gold italic">Cima Hoy</span>
+                </h1>
+                <p
+                    class="text-lg md:text-xl text-slate-300 max-w-lg leading-relaxed font-light border-l-2 border-primary pl-6">
+                    ¿Sientes que el éxito se te escapa? Nuestros Pactos Sagrados abren los caminos hacia la riqueza
+                    ilimitada, fama y la protección absoluta. Transforma tu destino radicalmente.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a class="wa-conversion-btn bg-primary hover:bg-red-700 text-white px-8 py-4 rounded-full text-base font-bold tracking-wide transition-all shadow-[0_0_20px_rgba(212,17,50,0.5)] flex items-center gap-2"
+                        href="https://wa.me/19123037943?text=Hola%20Maestro,%20deseo%20una%20consulta%20para%20un%20pacto%20de%20riqueza."
+                        target="_blank">
+                        Consulta Gratuita
+                        <span class="material-symbols-outlined text-sm">chat</span>
+                    </a>
+                </div>
+            </div>
+            <div class="relative h-full flex justify-center items-center hero-visual opacity-0 scale-90">
+                <div class="floating relative z-10 w-full max-w-md aspect-square">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-primary/40 to-red-900/40 rounded-full blur-3xl">
+                    </div>
+                    <img alt="Símbolo místico de unión y amor incondicional"
+                        class="relative w-full h-full object-cover rounded-full shadow-2xl ring-1 ring-white/10"
+                        loading="lazy" src="recursos/logos/logo.png"
+                        style="mask-image: radial-gradient(circle, black 60%, transparent 100%); -webkit-mask-image: radial-gradient(circle, black 60%, transparent 100%);" />
+                    <div
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] border border-white/10 rounded-full animate-[spin_20s_linear_infinite]">
+                        <div class="absolute top-0 left-1/2 w-3 h-3 bg-gold rounded-full shadow-[0_0_10px_#D4AF37]">
+                        </div>
+                    </div>
+                    <div
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] border border-white/5 rounded-full animate-[spin_30s_linear_infinite_reverse]">
+                        <div
+                            class="absolute bottom-0 left-1/2 w-2 h-2 bg-primary rounded-full shadow-[0_0_10px_#d41132]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Trust Bar -->
+    <section class="py-10 border-y border-white/5 bg-black/50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-center text-sm text-slate-500 uppercase tracking-widest mb-8">Nuestros clientes avalan
+                nuestros resultados en USA.</p>
+            <div
+                class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-4xl">favorite</span>
+                    <span class="font-serif font-bold text-xl">+5,000 Uniones</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-4xl">verified</span>
+                    <span class="font-serif font-bold text-xl">100% Garantizado</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-4xl">visibility_off</span>
+                    <span class="font-serif font-bold text-xl">Confidencialidad</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Authority Split Section -->
+    <section class="py-24 relative overflow-hidden bg-black/50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative group authority-img">
+                    <div
+                        class="absolute -inset-4 bg-gradient-to-r from-primary to-orange-600 rounded-xl blur-lg opacity-30 group-hover:opacity-50 transition duration-500">
+                    </div>
+                    <div class="relative h-[600px] w-full rounded-xl overflow-hidden shadow-2xl">
+                        <img alt="Altar de riqueza y éxito"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-105"
+                            loading="lazy" src="recursos/pactos/pactos1.webp" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80">
+                        </div>
+                        <div class="absolute bottom-8 left-8">
+                            <h3 class="font-serif text-3xl text-white mb-1">Poder y Autoridad</h3>
+                            <p class="text-gold text-sm tracking-widest uppercase">Pactos Inquebrantables</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-8 authority-text">
+                    <h2 class="font-serif text-4xl md:text-5xl text-white leading-tight">
+                        Fuerzas Ocultas al <br />
+                        <span class="text-primary italic">Servicio de tu Éxito</span>
+                    </h2>
+                    <p class="text-slate-300 text-lg leading-relaxed">
+                        Si has trabajado sin ver frutos, si la suerte te da la espalda o tus negocios no prosperan,
+                        nuestros Pactos de Alta Magia desbloquean de inmediato cualquier estancamiento financiero.
+                        Atraemos abundancia desmedida y garantizamos tu triunfo.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                        <div class="glass-card p-6 rounded-2xl">
+                            <span class="material-symbols-outlined text-gold text-3xl mb-3">lock</span>
+                            <h4 class="text-white font-bold mb-2">Riqueza Permanente</h4>
+                            <p class="text-sm text-slate-400">Sello sagrado que atrae el dinero y multiplica tus bienes
+                                velozmente.</p>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl">
+                            <span class="material-symbols-outlined text-gold text-3xl mb-3">bolt</span>
+                            <h4 class="text-white font-bold mb-2">Cambios Cuánticos</h4>
+                            <p class="text-sm text-slate-400">Apertura de caminos desde la primera sesión del pacto.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <a class="wa-conversion-btn inline-flex items-center text-gold hover:text-white font-medium gap-2 group transition-colors"
+                            href="https://wa.me/19123037943?text=Hola%20Maestro,%20quiero%20conocer%20sobre%20los%20Pactos%20de%20Riqueza."
+                            target="_blank">
+                            Contáctanos Ahora
+                            <span
+                                class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Masonry Grid -->
+    <section class="py-24 relative bg-[rgba(10,5,6,0.3)] backdrop-blur-md" id="services">
+        <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent">
+        </div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 max-w-2xl mx-auto">
+                <span class="text-primary text-sm font-bold tracking-widest uppercase mb-3 block">Poderes
+                    Ancestrales</span>
+                <h2 class="font-serif text-4xl md:text-5xl text-white mb-6">Pactos y Prosperidad</h2>
+                <p class="text-slate-400">Ceremonias exclusivas para alcanzar el estatus, fama y el poder económico que
+                    siempre has deseado.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px]">
+                <div
+                    class="glass-card rounded-2xl p-8 relative group overflow-hidden flex flex-col justify-end lg:row-span-2 service-card opacity-0">
+                    <div class="absolute inset-0 z-0">
+                        <img alt="Ritual de Pacto de Riqueza"
+                            class="w-full h-full object-cover opacity-40 group-hover:opacity-60 group-hover:scale-110 transition duration-700"
+                            loading="lazy" src="recursos/pactos/pactos2.webp" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                    </div>
+                    <div class="relative z-10">
+                        <span class="material-symbols-outlined text-gold text-4xl mb-4">account_balance</span>
+                        <h3 class="text-2xl font-serif text-white mb-2">Pactos de Riqueza</h3>
+                        <p class="text-slate-300 text-sm mb-6 line-clamp-3">A través de consagraciones absolutas abrimos
+                            los portales del éxito y el dinero, multiplicando tus ingresos en tiempo récord sin límites
+                            naturales.</p>
+                        <a class="wa-conversion-btn inline-flex items-center text-primary font-bold hover:text-white transition-colors"
+                            href="https://wa.me/19123037943?text=Quiero%20saber%20el%20costo%20de%20un%20Pacto%20de%20Riqueza."
+                            target="_blank">
+                            Consultar Precio <span class="material-symbols-outlined text-sm ml-1">arrow_outward</span>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="glass-card rounded-2xl p-8 relative group overflow-hidden flex flex-col justify-end service-card opacity-0">
+                    <div class="absolute inset-0 z-0">
+                        <img alt="Apertura de Negocios y Éxito"
+                            class="w-full h-full object-cover opacity-40 group-hover:opacity-60 group-hover:scale-110 transition duration-700"
+                            loading="lazy" src="recursos/pactos/pactos3.webp" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                    </div>
+                    <div class="relative z-10">
+                        <h3 class="text-xl font-serif text-white mb-1">Éxito en Negocios</h3>
+                        <p class="text-slate-300 text-xs">Transforma negocios en quiebra en imperios altamente
+                            rentables.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="glass-card rounded-2xl p-8 relative group overflow-hidden flex flex-col justify-end service-card opacity-0">
+                    <div class="absolute inset-0 z-0">
+                        <img alt="Pactos de Fama y Reconocimiento"
+                            class="w-full h-full object-cover opacity-40 group-hover:opacity-60 group-hover:scale-110 transition duration-700"
+                            loading="lazy" src="recursos/pactos/pactos4.webp" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                    </div>
+                    <div class="relative z-10">
+                        <h3 class="text-xl font-serif text-white mb-1">Fama y Reconocimiento</h3>
+                        <p class="text-slate-300 text-xs">Atracción magnética para brillar y ser adorado por multitudes.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="glass-card rounded-2xl p-8 relative group overflow-hidden flex flex-col justify-end service-card opacity-0">
+                    <div class="absolute inset-0 z-0">
+                        <img alt="Suerte en Juegos de Azar"
+                            class="w-full h-full object-cover opacity-40 group-hover:opacity-60 group-hover:scale-110 transition duration-700"
+                            loading="lazy" src="recursos/pactos/pactos5.webp" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                    </div>
+                    <div class="relative z-10">
+                        <h3 class="text-xl font-serif text-white mb-1">Juegos de Azar</h3>
+                        <p class="text-slate-300 text-xs">Sintonización de tu energía para atraer premios mayores,
+                            sorteos y loterías.</p>
+                    </div>
+                </div>
+                <div
+                    class="glass-card rounded-2xl p-8 relative group overflow-hidden flex flex-col justify-end lg:row-span-2 service-card opacity-0">
+                    <div class="absolute inset-0 z-0">
+                        <img alt="Protección Sobrenatural contra Envidas"
+                            class="w-full h-full object-cover opacity-40 group-hover:opacity-60 group-hover:scale-110 transition duration-700"
+                            loading="lazy" src="recursos/pactos/pactos6.webp" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                    </div>
+                    <div class="relative z-10">
+                        <span class="material-symbols-outlined text-gold text-4xl mb-4">shield</span>
+                        <h3 class="text-2xl font-serif text-white mb-2">Escudo Energético</h3>
+                        <p class="text-slate-300 text-sm mb-6 line-clamp-3">Blindamos tu éxito contra la envidia, malas
+                            vibras y enemigos ocultos. Garantizamos que el éxito y abundancia obtenidos nunca decaigan.
+                        </p>
+                        <a class="wa-conversion-btn inline-flex items-center text-primary font-bold hover:text-white transition-colors"
+                            href="https://wa.me/19123037943?text=Requiero%20protección%20energética." target="_blank">
+                            Consultar <span class="material-symbols-outlined text-sm ml-1">arrow_outward</span>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="glass-card rounded-2xl p-8 relative group overflow-hidden flex flex-col justify-end service-card opacity-0">
+                    <div class="absolute inset-0 z-0">
+                        <div class="w-full h-full bg-slate-800 opacity-40"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                    </div>
+                    <div class="relative z-10">
+                        <h3 class="text-xl font-serif text-white mb-1">Destrucción de Bloqueos</h3>
+                        <p class="text-slate-300 text-xs">Anula magia negra que te impide avanzar financieramente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Final CTA -->
+    <section class="py-32 relative overflow-hidden flex items-center justify-center bg-black/50 backdrop-blur-md"
+        id="book">
+        <div class="absolute inset-0 bg-primary/10 radial-gradient-center"></div>
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/20 rounded-full blur-[100px] -z-10 animate-pulse">
+        </div>
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <h2 class="font-serif text-5xl md:text-7xl text-white mb-8 leading-tight">
+                Da el Salto al <span class="italic text-primary">Gran Poder</span>
+            </h2>
+            <p class="text-xl text-slate-300 mb-10 max-w-2xl mx-auto font-light">
+                Es momento de reclamar la fortuna y vida llena de lujos que mereces. Nuestros pactos atraen dinero y
+                oportunidades magnéticas de inmediato.
+            </p>
+            <a class="wa-conversion-btn inline-flex items-center justify-center bg-primary hover:bg-red-700 text-white text-lg font-bold py-5 px-12 rounded-full shadow-[0_0_40px_rgba(212,17,50,0.6)] hover:shadow-[0_0_60px_rgba(212,17,50,0.8)] transition-all transform hover:scale-105"
+                href="https://wa.me/19123037943?text=Deseo%20información%20urge%20sobre%20Pactos%20de%20Abundancia."
+                target="_blank">
+                Consulta Reservada Vía WhatsApp
+            </a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-black/90 backdrop-blur-md border-t border-white/10 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+                <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-3xl">all_inclusive</span>
+                    <span class="text-2xl font-serif font-bold text-white">El Templo de los Pactos</span>
+                </div>
+            </div>
+            <div
+                class="flex flex-col md:flex-row justify-between items-center border-t border-white/5 pt-8 text-sm text-slate-500">
+                <p>© 2026 Reservados todos los derechos.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a class="hover:text-white transition-colors" href="privacidad.html">Privacidad</a>
+                    <a class="hover:text-white transition-colors" href="terminos.html">Términos</a>
+                    <a class="hover:text-white transition-colors" href="descargos.html">Descargo de Responsabilidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+            gsap.registerPlugin(ScrollTrigger);
+            gsap.to(".hero-text", { opacity: 1, y: 0, duration: 1.2, ease: "power3.out", delay: 0.2 });
+            gsap.to(".hero-visual", { opacity: 1, scale: 1, duration: 1.5, ease: "back.out(1.2)", delay: 0.5 });
+            gsap.utils.toArray(".service-card").forEach((card, i) => {
+                gsap.to(card, {
+                    scrollTrigger: { trigger: "#services", start: "top 70%" },
+                    opacity: 1, y: 0, duration: 0.8, delay: i * 0.1, ease: "power2.out"
+                });
+            });
+            gsap.from(".authority-img", { scrollTrigger: { trigger: ".authority-img", start: "top 80%" }, x: -50, opacity: 0, duration: 1, ease: "power2.out" });
+            gsap.from(".authority-text", { scrollTrigger: { trigger: ".authority-text", start: "top 80%" }, x: 50, opacity: 0, duration: 1, ease: "power2.out", delay: 0.2 });
+        });
+    </script>
+</body>
+
+</html>

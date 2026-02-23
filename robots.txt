@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://chamanes-espirituales.online/sitemap.xml
